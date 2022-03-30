@@ -1,0 +1,20 @@
+.graph {
+    position: relative;
+    height: 800px;
+  }
+
+  .editor {
+    display: flex;
+    flex: 1;
+    background-color: #f4f6f8;
+  }
+  
+  .editorBd {
+    flex: 1;
+  }
+  
+
+  .flow {
+    flex: 1;
+  }
+  

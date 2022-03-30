@@ -1,0 +1,14 @@
+:global .gantt_task_line.gantt_milestone .gantt_task_content {
+  transform: none;
+  border: none;
+  clip-path: polygon(0 0, 50% 100%, 100% 0);
+}
+
+:global .overdue-indicator {
+  transform: scale(0.8) !important;
+}
+
+/* グリッドヘッダーの罫線 */
+:global .gantt_grid .gantt_grid_scale .gantt_grid_head_cell {
+  border-right: 1px solid #cecece!important;
+}

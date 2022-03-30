@@ -1,0 +1,529 @@
+:global #gantt_here .gantt_grid_data .gantt_cell {
+    border-right: 1px solid #ebebeb
+}
+
+:global .overdue-indicator {
+    width: 24px;
+    margin-top: 5px;
+    height: 24px;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    border-radius: 17px;
+    color: white;
+    background: rgb(255, 60, 60);
+    line-height: 25px;
+    text-align: center;
+    font-size: 24px;
+}
+
+:global .ant-layout {
+    background-color: #ffffff !important;
+    /* Revert P2FW-681 */
+    /* background-color: #f5f5f5 !important; */
+}
+:global body {
+    font-family: 'Noto Sans JP', sans-serif;
+}
+:global main {
+    font-weight: 300;
+}
+:global label {
+    font-weight: bold;
+}
+:global .ant-row.ant-row-middle {
+    font-weight: bold;
+}
+/* 必須マーク */
+:global .ant-tag.ant-tag-red {
+    font-weight: 400;
+}
+
+:global .ant-layout .ant-layout-has-sider {
+    background-color: #ffffff !important;
+}
+:global .ant-layout-footer {
+    background-color: #ffffff !important;
+}
+
+/* 単位 */
+:global .ant-space.ant-space-horizontal.ant-space-align-center {
+    font-weight: 400;
+}
+/* ラジオボタン */
+:global .ant-radio-group.ant-radio-group-outline span {
+    font-weight: 400;
+}
+
+/*課題一覧テーブル 以下がないと左のラインが表示されない*/
+:global .task-list .ant-table-cell {
+    border-left: 1px solid #e4e3e3!important;
+    border-right: 0px solid #e4e3e3!important;
+}
+
+:global .task-list .ant-table-cell:last-child {
+    border-right: 1px solid #e4e3e3!important;
+}
+
+/*課題一覧テーブル テキストのリンク表現*/
+:global .task-list .link-text{
+    color:rgb(50,188, 161)!important;
+    text-decoration: none!important;
+}
+
+:global .task-list .link-text:hover{
+    color:rgb(30,168, 131)!important;
+    text-decoration: underline!important;
+}
+/*コンテンツの外枠の背景色*/
+/*
+
+:global .ant-menu-dark .ant-menu-inline.ant-menu-sub {
+    background-color: rgb(240,240,240)!important;
+}
+
+:global section > section > div{
+    background-color: rgb(240,240,240)!important;
+}
+
+:global section > section > div > main{
+    background-color: rgb(255,255,255)!important;
+    padding:10px!important;
+    margin:16px!important;
+}*/
+
+/*
+:global .ant-menu {
+    background-color: #dfdfdf!important;
+}
+
+:global .ant-layout-sider-children{
+    background-color: #dfdfdf!important;
+}
+
+:global .ant-menu-item .ant-menu-item-only-child:hover{
+    background-color: #df00!important;
+}*/
+/* ヘッダー */
+:global .ant-pro-global-header {
+    font-weight: 400;
+}
+:global .ant-pro-global-header .ant-btn {
+    font-weight: bold!important;
+}
+
+:global .ant-layout-sider-children {
+    font-weight: bold;
+    font-size: 24px;
+}
+:global ul.ant-menu.ant-menu-sub.ant-menu-inline{
+    background-color: #1a77d4!important;
+    color: #ffffff;
+}
+
+/*メニューの背景 */
+:global .ant-menu-vertical {
+    background-color: #1a77d4!important;
+    color: #ffffff!important;
+}
+:global .ant-menu-item .ant-menu-item-only-child {
+    color: #ffffff!important;
+}
+.ant-menu-.ant-menu-item:active, .ant-menu-submenu-title:active {
+    background-color: #1a77d4!important;
+}
+/*メニューの背景（アイコン以外の部分）*/
+:global .ant-menu.ant-menu-light.ant-pro-sider-menu.ant-menu-root.ant-menu-inline{
+    background-color: #1a77d4!important;
+    color: #ffffff!important;
+}
+:global .ant-layout-sider-children{
+    background-color: #1a77d4!important;
+    color: #ffffff!important;
+}
+
+/*メニューの背景（開いた状態で必要）*/
+:global .content-root .ant-menu-inline{
+    background-color: #1a77d4!important;
+    color: #ffffff!important;
+}
+
+/*メニューをホバーした際に色が反転 */
+:global .ant-menu-item:hover, :global .ant-menu-submenu:hover {
+    background-color: #3e8cdb!important;
+    transition: background-color 0s 0s;
+}
+
+:global .ant-menu-item:hover a, :global .ant-menu-submenu-title:hover{
+    color: #ffff!important;
+    transition: color 0s 0s ;
+}
+
+:global .ant-menu-submenu.ant-menu-submenu-open{
+    color: #ffff!important;
+    transition: color 0s 0s ;
+    background-color: #1a77d4!important;
+    transition: background-color 0s 0s;
+}
+
+:global .ant-menu-submenu.ant-menu-submenu-selected {
+    background-color: #eaf3fb!important;
+    color: #595959!important;
+}
+
+:global .ant-menu-submenu, :global .ant-menu-item-only-child a{
+    color: #ffffff!important;
+}
+
+
+:global .ant-menu:not(.ant-menu-horizontal) :global .ant-menu-item-selected {
+    background-color: #eaf3fb!important;
+}
+:global .ant-menu:not(.ant-menu-horizontal) :global .ant-menu-item-selected a{
+    color: #595959!important;
+}
+
+:global .ant-pro-sider-menu-logo {
+    width:100%;
+    position: absolute!important;
+    bottom: 0!important;
+}
+
+/*メニューの背景（開いた状態で必要）*/
+:global .ant-menu-inline{
+    background-color: #1a77d4!important;
+    color: #ffffff;
+}
+/* ボタン */
+:global .ant-btn {
+    width: 210px;
+    min-height: 44px;
+    justify-content: center;
+}
+/* typeを指定していないとき メインボタン*/
+:global .ant-btn.ant-btn {
+    background-color: #1a77d4;
+    color: #fff;
+    font-weight: 400;
+}
+:global .ant-btn.ant-btn:hover {
+    background-color: rgb(26,119,212,0.75);
+    color: #fff;
+    border: none;
+}
+/* type="default" 選択ボタン*/
+:global .ant-btn.ant-btn-default {
+    background-color: #00b429;
+    border: none;
+    font-weight: 400;
+}
+:global .ant-btn.ant-btn.ant-btn-default:hover {
+    background-color: rgb(0,180,41,0.75);
+}
+:global .ant-btn.ant-btn.ant-btn-default:active {
+    background-color: #00b429;
+    color: #ffffff;
+    border: none;
+}
+:global .ant-btn.ant-btn.ant-btn-default:focus{
+    background-color: #00b429;
+    color: #ffffff;
+    border: none;
+}
+
+/* type="primary" 決定ボタン*/
+:global .ant-btn.ant-btn-primary {
+    background-color: #ff6200;
+    border: none;
+    font-weight: 400;
+}
+:global .ant-btn.ant-btn.ant-btn-primary:hover {
+    background-color: rgb(255,98,0,0.75);
+    color: #ffff;
+}
+:global .ant-btn.ant-btn.ant-btn-primary:active {
+    background-color: #ff6200;
+    border: none;
+}
+:global .ant-btn.ant-btn.ant-btn-primary:focus {
+    background-color: #ff6200;
+    border: none;
+}
+
+/* type="submit" 決定・提出ボタン*/
+:global .ant-btn.ant-btn-submit {
+    width: 210px;
+    min-height: 44px;
+    justify-content: center;
+    background-color: #ff6200;
+    border: none;
+    font-weight: 400;
+}
+:global .ant-btn.ant-btn.ant-btn-submit:hover {
+    width: 210px;
+    min-height: 44px;
+    justify-content: center;
+    background-color: rgb(255,98,0,0.75);
+    color: #ffff;
+}
+:global .ant-btn.ant-btn.ant-btn-submit:active {
+    width: 210px;
+    min-height: 44px;
+    justify-content: center;
+    background-color: #ff6200;
+    border: none;
+}
+
+/* type="ghost" キャンセルボタン*/
+:global .ant-btn.ant-btn-ghost {
+    background-color: #ffffff;
+    border-color: #919191!important;
+    color: #2b2b2b!important;
+    font-weight: 400;
+}
+:global .ant-btn.ant-btn.ant-btn-ghost:hover {
+    background-color: #eeeeee;
+    border-style: solid;
+    border-color: #dddddd!important;
+    border-width: 1px;
+    color: #2b2b2b;
+}
+:global button:disabled {
+    background-color: #ededed!important;
+    border-color: #919191!important;
+    font-weight: 400;
+}
+:global button:disabled:hover {
+    color: rgba(0, 0, 0, 0.25)!important;
+}
+/* テキストボタン */
+:global .ant-btn.ant-btn-text.ant-btn-sm {
+    color: #dddddd;
+    width: 65px;
+}
+:global .ant-btn.ant-btn-text.ant-btn-sm span{
+    color: #dddddd!important;
+    border-bottom: solid;
+    border-color: #dddddd!important;
+    border-width: 1px;
+}
+/*ラジオボタン 選択 背景色*/
+:global .schedule-list .ant-radio-button-checked {
+    background-color: #1a77d4;
+    color: #ffffff;
+}
+
+/*ラジオボタン 選択 文字色*/
+:global .schedule-list .ant-radio-button-wrapper-checked > span {
+    color: #f5f5f5;
+}
+
+/*ラジオボタン 背景色*/
+:global .schedule-list .ant-radio-button-wrapper {
+    background-color: #f5f5f5;
+    color: black;
+}
+
+
+/*ラジオボタン ホバー*/
+:global .schedule-list .ant-radio-button-wrapper:hover {
+    background-color: #f5f5f5;
+    color: black;
+}
+
+/*タブ */
+:global .ant-tabs-tab {
+    width: 160px;
+    border-bottom: #919191;
+    justify-content: center;
+    background: linear-gradient(#e2e2e2, #ffffff)!important;
+    color: #919191!important;
+    font-weight: 400;
+}
+:global .ant-tabs-tab.ant-tabs-tab-active {
+    background: linear-gradient(#aed7fe, #ffffff)!important;
+}
+:global .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn{
+    color: #1a77d4!important
+}
+/* テーブル */
+/* データ行 */
+:global th {
+    font-weight: bold!important;
+    color: #ffffff!important;
+    font-size: 16px;
+}
+:global td {
+    font-weight: 300!important;
+    font-size: 14px;
+    color: #595959!important;
+}
+:global th span{
+    color: #ffffff!important;
+}
+:global thead.ant-table-thead tr+tr th {
+    background-color: #3e8cdb!important;
+} 
+/* モーダル内のフッターボタン */
+:global .ant-modal-footer {
+    display:flex;
+    justify-content:center;
+}
+/* モーダル内の検索ボタン */
+:global .ant-modal-content .ant-btn.ant-btn-primary.ant-input-search-button {
+    width: 40px;
+    min-height: 32px;
+    background-color: #00b429;
+}
+
+/*
+:global .ant-layout-content ,ant-pro-basicLayout-content ant-pro-basicLayout-has-header {
+    background-color: rgb(248,248,248)!important;
+}
+
+/*
+:global .ant-layout{
+    background-color: rgb(248,248,248)!important;
+}
+
+:global .ant-layout-content{
+    background-color: rgb(255,255,255)!important;
+}
+
+:global .ant-layout .ant-layout-has-sider{
+    background-color: rgb(255,255,255)!important;
+}
+*/
+
+/*
+:global .ant-tabs-nav-wrap {
+    background-color: rgb(248,248,248)!important;
+}
+*/
+
+
+/*
+:global .ant-tabs .ant-tabs-top .ant-tabs-card{
+    border: 1px solid rgb(100,100,100)
+}
+
+:global .ant-tabs-nav{
+    margin-bottom: 0px;
+}*/
+
+/* Spinner */
+/* Make clicks pass-through */
+:global #nprogress {
+    pointer-events: none;
+}
+
+:global #nprogress .bar {
+    background-color: #eaf3fb!important;
+    color: #595959!important;
+
+    position: fixed;
+    z-index: 1031;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 2px;
+}
+
+/* Fancy blur effect */
+:global #nprogress .peg {
+    display: block;
+    position: absolute;
+    right: 0px;
+    width: 100px;
+    height: 100%;
+    box-shadow: 0 0 10px #eaf3fb, 0 0 5px #eaf3fb;
+    opacity: 1.0;
+
+    -webkit-transform: rotate(3deg) translate(0px, -4px);
+    -ms-transform: rotate(3deg) translate(0px, -4px);
+    transform: rotate(3deg) translate(0px, -4px);
+}
+
+/* Remove these to get rid of the spinner */
+:global #nprogress .spinner {
+    display: none;
+}
+
+:global #nprogress .spinner-icon {
+    width: 18px;
+    height: 18px;
+    box-sizing: border-box;
+
+    border: solid 2px transparent;
+    border-top-color: #29d;
+    border-left-color: #29d;
+    border-radius: 50%;
+
+    -webkit-animation: nprogress-spinner 400ms linear infinite;
+    animation: nprogress-spinner 400ms linear infinite;
+}
+
+:global .nprogress-custom-parent {
+    overflow: hidden;
+    position: relative;
+}
+
+:global .nprogress-custom-parent #nprogress .spinner,
+:global .nprogress-custom-parent #nprogress .bar {
+    position: absolute;
+}
+
+:global @-webkit-keyframes nprogress-spinner {
+    0%   { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+}
+:global @keyframes nprogress-spinner {
+    0%   { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+:global  .graph {
+    position: relative;
+    height: 800px;
+}
+
+:global .toolbar {
+    display: flex;
+    align-items: center;
+    padding: 8px;
+    border-bottom: 1px solid #e8e8e8;
+    background: #ffffff;
+}
+
+:global .contextMenu {
+    background: #9c9292;
+    border-radius: 4px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+}
+
+:global .command {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    padding: 5px 12px;
+    transition: all 0.3s;
+    user-select: none;
+}
+
+:global .command :hover {
+    background: #e6f7ff;
+}
+
+:global .command i {
+    margin-right: 8px;
+}
+
+:global .commandDisabled {
+    cursor: auto;
+    color: rgba(0, 0, 0, 0.25);
+}
+
+:global .commandDisabled  :hover {
+    background: #fff;
+}

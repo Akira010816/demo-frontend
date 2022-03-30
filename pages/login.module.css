@@ -1,0 +1,29 @@
+.site_layout_content {
+    min-height: 280px;
+    padding: 24px;
+    background: #fff;
+  }
+  .logo {
+    float: left;
+    width: 30px;
+    height: 31px;
+    margin: 16px 24px 16px 0;
+  }
+  .ant-row-rtl .logo {
+    float: right;
+    margin: 16px 0 16px 24px;
+  }
+    [data-theme="dark"] .site-layout-content {
+      background: #141414;
+    }
+
+    .login_form {
+      max-width: 300px;
+    }
+    .login_form_forgot {
+      float: right;
+    }
+    .login_form_button {
+      width: 100%;
+      background-color: #00b429 !important;
+    }

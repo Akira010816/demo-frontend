@@ -1,0 +1,12 @@
+.section {
+    cursor: pointer;
+    display:inline-block;
+    margin-left:10px;
+     color:gray
+}
+
+/*
+.section:hover {
+    cursor: pointer;
+}
+*/
